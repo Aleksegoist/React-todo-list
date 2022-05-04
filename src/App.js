@@ -29,7 +29,7 @@ function App() {
     const toggleComlete = (id) => {
         setTasks(
             tasks.map((task) =>
-                task.id === id ? { ...task, completed: !task.comleted } : task
+                task.id === id ? { ...task, completed: !task.completed } : task
             )
         );
     };
@@ -102,6 +102,11 @@ function App() {
                         </div>
                     ))}
                 </div>
+                <p className='length'>
+                    {tasks < 1
+                        ? 'You have not any tasks'
+                        : `You have: ${tasks.length} tasks`}
+                </p>
             </div>
         </div>
     );

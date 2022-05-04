@@ -75,7 +75,12 @@
   text-transform: capitalize;
 }
 
-.comleted {
+.completed {
   background-color: #eee;
   text-decoration: line-through;
+}
+
+.app .length {
+  margin: 10px 0;
+  font-size: 18px;
 }
